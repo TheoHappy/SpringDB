@@ -18,12 +18,12 @@ public class UtmWebService {
     }
 
     @PostMapping("student")
-    public void save(@RequestBody Student student){
+    public void save(@RequestBody Student student) {
         studentRepository.save(student);
     }
 
     @DeleteMapping("student/{firstName}")
-    public void delete(@PathVariable String firstName){
+    public void delete(@PathVariable String firstName) {
         studentRepository.delete(firstName);
     }
 }

@@ -23,6 +23,7 @@ public class StudentRepository {
                                 reponse.getDouble("average")));
     }
 
+
     public void save(Student student) {
         jdbcTemplate.update(
                 "INSERT INTO Student(firstName, lastName, gender, \"group\", average) VALUES(?,?,?,?,?)",
